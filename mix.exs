@@ -14,6 +14,7 @@ defmodule Fpanel.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
+      mod: { TUI, [] },
       extra_applications: [:logger]
     ]
   end
@@ -22,6 +23,7 @@ defmodule Fpanel.MixProject do
   defp deps do
     [
       {:ratatouille, "~> 0.5.1"},
+      {:poison, "~> 3.1"}
     ]
   end
 end
