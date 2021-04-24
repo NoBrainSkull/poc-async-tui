@@ -3,7 +3,7 @@ This Proof of Concept demonstrates how an elixir terminal application can :
 * offer a TUI which does not require the user to issue commands
 * perform async request (like an http query) whitout freezing user navigation
 
-<img width="400" src=".github/scheme.png" alt="demo.png"/>
+<img width="400" src=".github/demo.png" alt="demo.png"/>
 
 ## What I had in mind :
 * Getting deeper knowledge about how elixir processes work and communicate
