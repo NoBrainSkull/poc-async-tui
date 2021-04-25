@@ -39,10 +39,11 @@ a representation of interactions in the app :
 ```bash
 # Repl into the app by linking an iex process to it
 iex --remsh app --sname repl
+
+# > TUI.State.put(:content, "You are under my control") 
 ```
 
 ## Upgrade ideas
 * Exiting only close the window, the app process need to be killed
-* Use an example which don't need orkestra profile
 * Introduce supervision to better handle actions failures
 * Introduce a better state management in a reframe-like fashion
