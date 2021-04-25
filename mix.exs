@@ -15,7 +15,7 @@ defmodule Fpanel.MixProject do
   def application do
     [
       mod: { TUI, [] },
-      extra_applications: [:logger]
+      extra_applications: [:httpoison, :logger]
     ]
   end
 
@@ -23,6 +23,7 @@ defmodule Fpanel.MixProject do
   defp deps do
     [
       {:ratatouille, "~> 0.5.1"},
+      {:httpoison, "~> 1.8"},
       {:poison, "~> 3.1"}
     ]
   end

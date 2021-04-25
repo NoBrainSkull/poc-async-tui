@@ -15,7 +15,7 @@ defmodule TUI.Events do
   # On "q" keypress, exit
   def handle_event({:event, %{ch: ?q}}), do: TUI.stop()
   # On "a" keypress, list aws apikeys ids
-  def handle_event({:event, %{ch: ?a}}), do: exec(&list_all_api_keys/1)
+  def handle_event({:event, %{ch: ?a}}), do: exec(&list_last_posts/1)
   # On "e" keypress, raise a fake error
   def handle_event({:event, %{ch: ?e}}), do: exec(&just_a_fake_error/1)
   # Otherwise ignore
